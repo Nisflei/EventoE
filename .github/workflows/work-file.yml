@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Meu Primeiro CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+
+jobs:
+  build_TESTE:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Primeira Task
+        run: echo Executa o primero comando no linux
+
+    
+      - name: Seguna Task
+        run: |
+          echo Executa segundo comando no shell
+          ls
