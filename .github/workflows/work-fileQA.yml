@@ -1,5 +1,5 @@
 
-name: PIPELINE QA
+name: PIPELINE QA (meuCI)
 
 on:
   push:
